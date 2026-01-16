@@ -56,7 +56,7 @@ else
     # Gemini 전역/프로젝트 등록 (명령어 구조에 맞춰 --scope 활용)
     # 실제 Gemini CLI의 명령어 규격에 따라 조정될 수 있습니다.
     gemini mcp remove ui-prototyper --scope "$SCOPE" &> /dev/null
-    gemini mcp add ui-prototyper --scope "$SCOPE" -- node "$SERVER_PATH"
+    gemini mcp add ui-prototyper --scope "$SCOPE" node "$SERVER_PATH"
 fi
 
 echo -e "\n${BLUE}==========================================${NC}"
