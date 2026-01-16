@@ -8,8 +8,8 @@ import {
 // 1. 서버 인스턴스 생성
 const server = new Server(
   {
-    name: "ui-prototyper",
-    version: "1.0.0",
+    name: "ui-ascii-art",
+    version: "2.0.0",
   },
   {
     capabilities: {

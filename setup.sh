@@ -50,18 +50,18 @@ echo -e "\n${GREEN}🔗 4단계: $CLI_CMD ($SCOPE)에 MCP 서버 등록 중...${
 
 if [ "$CLI_CMD" == "claude" ]; then
     # Claude 전역/로컬 등록
-    claude mcp remove ui-prototyper -s "$SCOPE" &> /dev/null
-    claude mcp add -s "$SCOPE" ui-prototyper -- node "$SERVER_PATH"
+    claude mcp remove ui-ascii-art -s "$SCOPE" &> /dev/null
+    claude mcp add -s "$SCOPE" ui-ascii-art -- node "$SERVER_PATH"
 else
     # Gemini 전역/프로젝트 등록 (명령어 구조에 맞춰 --scope 활용)
     # 실제 Gemini CLI의 명령어 규격에 따라 조정될 수 있습니다.
-    gemini mcp remove ui-prototyper --scope "$SCOPE" &> /dev/null
-    gemini mcp add ui-prototyper --scope "$SCOPE" node "$SERVER_PATH"
+    gemini mcp remove ui-ascii-art --scope "$SCOPE" &> /dev/null
+    gemini mcp add ui-ascii-art --scope "$SCOPE" node "$SERVER_PATH"
 fi
 
 echo -e "\n${BLUE}==========================================${NC}"
 echo -e "${GREEN}✅ 모든 설정이 완료되었습니다!${NC}"
 echo -e "Target CLI: ${YELLOW}$CLI_CMD${NC}"
 echo -e "Scope: ${YELLOW}$SCOPE${NC}"
-echo -e "\n이제 '${YELLOW}ui-prototyper${NC}'를 사용하여 제품 경험을 설계하세요."
+echo -e "\n이제 '${YELLOW}ui-ascii-art${NC}'를 사용하여 제품 경험을 설계하세요."
 echo -e "${BLUE}==========================================${NC}"
