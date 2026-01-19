@@ -59,9 +59,9 @@ chmod +x setup.sh
 
 설치 시 선택하는 Scope에 따라 도구의 사용 범위가 결정됩니다.
 
-| CLI Tool        | Option 1 (Local/Project)       | Option 2 (Global/User)        |
+| CLI Tool        | Option 1 (Local/Project)       | Option 2 (User)        |
 | --------------- | ------------------------------ | ----------------------------- |
-| **Claude Code** | `local` | `global` |
+| **Claude Code** | `local` | `user` |
 | **Gemini CLI**  | `project` | `user` |
 
 ---

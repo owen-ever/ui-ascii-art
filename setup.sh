@@ -22,7 +22,7 @@ echo -e "\n${CYAN}Step 2: 설치 위치(Scope)를 선택하세요.${NC}"
 if [ "$CLI_TYPE" == "1" ]; then
     CLI_CMD="claude"
     echo -e "1) local  (현재 디렉토리의 .claude.json에 저장)"
-    echo -e "2) global (사용자 전역 설정에 저장)"
+    echo -e "2) user (사용자 계정 설정에 저장)"
     read -p "입력 (1 or 2): " SCOPE_INPUT
     [ "$SCOPE_INPUT" == "1" ] && SCOPE="local" || SCOPE="user"
 else
